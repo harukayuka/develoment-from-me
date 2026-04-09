@@ -88,17 +88,15 @@
       background: var(--rose);
     }
 
-    .site-title {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(1.8rem, 4vw, 2.6rem);
+    .site-tagline {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.85rem;
       font-weight: 300;
-      color: var(--ink);
-      animation: fadeDown 0.9s ease 0.1s both;
-    }
-
-    .site-title em {
-      font-style: italic;
-      color: var(--rose);
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+      margin-top: 16px;
+      animation: fadeDown 1s ease 0.2s both;
     }
 
     .header-divider {
@@ -106,12 +104,13 @@
       align-items: center;
       justify-content: center;
       gap: 12px;
-      margin-top: 28px;
-      animation: fadeDown 1s ease 0.2s both;
+      margin-top: 40px;
+      animation: fadeDown 1s ease 0.3s both;
     }
 
     .header-divider-line {
-      flex: 1; max-width: 200px;
+      flex: 1;
+      max-width: 200px;
       height: 1px;
       background: var(--cream-dark);
     }
@@ -121,7 +120,7 @@
       font-size: 1.2rem;
       color: var(--rose-light);
     }
-
+    
     /* ── BACK LINK ── */
     .back-link {
       display: inline-flex;
@@ -402,8 +401,10 @@
         <div class="ornament-dot"></div>
         <div class="ornament-line right"></div>
       </div>
+
       <h1 class="site-title">Development <em>from</em> Me</h1>
       <p class="site-tagline">Ide &nbsp;·&nbsp; Riset &nbsp;·&nbsp; Perasaan dalam Markdown</p>
+
       <div class="header-divider">
         <div class="header-divider-line"></div>
         <span class="header-divider-symbol">✦</span>
